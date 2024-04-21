@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    background-color: white;
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  header{
+    background: black;
+    /* background-image:url(old\ man.webp); */
+    height:200px;
+    background-size: 100%;
+    
+   
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: silver; */
+    max-width: 100%;
+    padding:0px;
+    margin: 0px;
+    top:0;
+
+    /* height: 60px; */
+}
+li{
+    float: left;
+  
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black
+
+}
+li a:hover{
+    background-color: rgb(12, 11, 11,0.6);
+    color:white
+}
+.tel>a{color:white;
+    font-size: 2rem
+}
+nav a{
+    float: left;
+}
+.home{
+    display:inline-block;
+    width:200px; 
+    text-indent: -9999999999px;
+    position:relative;
+    height:40px;
+    background-image: url(car\ e.webp);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    margin-top: 5px 
+    
+}
+li.klist{
+    margin-left: 30%;
+    color:black;
+    display: block;
+}
+li.llist{
+    margin-left:18%;
+    padding:10px;
+    margin-top: auto;
+    display:block
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 9999999999;
+    top: 0;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  .navbar a:hover{
+    background-color: green;
+    color:white
+  }
+  .go>a,.go>span,.dropdown>a{
+    float:left ;
+    padding:10px ;
+    margin-right:20px; 
+    color:white
+}
+.tel{margin-left: 10px;}
+*{
+box-sizing: border-box;
+}
+body{
+padding: 0px;
+margin: 0%; 
+padding-top: 60px;
+}
+header{
+background: black;
+background-image:url(car\ e.webp);
+height:200px;
+background-size: 100%;
+
+
+}
+ul {
+list-style-type: none;
+overflow: hidden;
+/* background-color: silver; */
+max-width: 100%;
+padding:0px;
+margin: 0px;
+top:0;
+
+/* height: 60px; */
+}
+li{
+float: left;
+
+
+}
+li a{
+display: block;
+padding: 10px;
+font-size: 1.4rem;
+text-decoration: none;
+text-transform: capitalize;
+color:black
+
+}
+li a:hover{
+background-color: rgb(12, 11, 11,0.6);
+color:white
+}
+.tel>a{color:white;
+font-size: 2rem
+}
+nav a{
+float: left;
+}
+.home{
+display:inline-block;
+width:200px; 
+text-indent: -9999999999px;
+position:relative;
+height:40px;
+background-image: url(car\ e.webp);
+background-repeat: no-repeat;
+border-radius: 50%;
+width: 40px;
+margin-top: 5px 
+
+}
+li.klist{
+margin-left: 30%;
+color:black;
+display: block;
+}
+li.llist{
+margin-left:18%;
+padding:10px;
+margin-top: auto;
+display:block
+}
+#navbar {
+overflow: hidden;
+background-color: #333;
+z-index: 9999999999;
+top: 0;
+}
+
+/* Navbar links */
+#navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
+.navbar a:hover{
+background-color: green;
+color:white
+}
+
+/* Page content */
+.content {
+padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 60px;
+}
+#navbar a,.dropbtn {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 16px;
+}
+.dropbtn{
+text-transform: capitalize;
+border: none;
+background-color: #333
+}
+.navbar a:hover,.dropbtn:hover{
+background-color: green;
+color:white
+}
+.flex-container{
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:50px;
+  padding-right:50px;
+  background-color:rgb(175, 164, 164,0.5);
+}
+.contain{
+  flex:20%;
+}
+.cap{
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
+}
+.bat{
+  margin-left: 4%;
+}
+.but{
+  width:100%;
+  padding:5px;
+  color:black;
+  background-color: brown;
+  border: none;
+  border-radius: 5px;
+}
+.but:hover{
+  background-color: red;
+}
+.shop{
+  background-color:white;
+  color:red;
+  font-weight: 1000px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* .shop a{
+ 
+} */
+.move{
+  margin-left: 15%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+input[type=text], input[type=password],input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.click{
+  border: none;
+  padding:5px;
+  background-color: red;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.click:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border: none;
+  font-size: 1.1rem;
+}
+.cancelbtn:hover{
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 60%; 
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  animation: animatezoom 0.6s
+}
+
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.centre:hover{
+  background-color: rgb(17, 233, 17,0.2);
+}
+button a{
+  text-decoration: none;
+  color:black;
+  display:block;
+}
+.go{
+  float: left;
+  margin-left: 50%;
+}
+.shop{
+  background-color: green;
+
+}
+.shop>a{
+  color:black
+}
+.content{
+  padding: 5px;
+  margin: 0px;
+  position: relative;
+}
+.content:hover{
+  background-color:rgb(165, 164, 164,0.8);
+  box-shadow: 4px 3px 2px silver;
+
+}
+  /* box-shadow: 4px 3px 2px silver;
+} */
+.buyme{
+  padding:10px;
+  background-color: rgb(236, 172, 11,0.8);
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left:40%;
+  display:none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 1000px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content:hover .buyme{
+  display: block;
+}
+.column a{
+  text-decoration: none;
+  color: black;
+}

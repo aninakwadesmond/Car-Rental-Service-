@@ -1,0 +1,503 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0%; 
+    padding-top: 60px;
+}
+header{
+    background: black;
+    background-image:url(car\ e.webp);
+    height:200px;
+    background-size: 100%;
+    
+   
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: silver; */
+    max-width: 100%;
+    padding:0px;
+    margin: 0px;
+    top:0;
+
+    /* height: 60px; */
+}
+li{
+    float: left;
+  
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black
+
+}
+li a:hover{
+    background-color: rgb(12, 11, 11,0.6);
+    color:white
+}
+.tel>a{color:white;
+    font-size: 2rem
+}
+nav a{
+    float: left;
+}
+.home{
+    display:inline-block;
+    width:200px; 
+    text-indent: -9999999999px;
+    position:relative;
+    height:40px;
+    background-image: url(car\ e.webp);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    margin-top: 5px 
+    
+}
+li.klist{
+    margin-left: 30%;
+    color:black;
+    display: block;
+}
+li.llist{
+    margin-left:18%;
+    padding:10px;
+    margin-top: auto;
+    display:block
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 9999999999;
+    top: 0;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  .navbar a:hover{
+    background-color: green;
+    color:white
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+.go>a,.go>span,.dropdown>a{
+    float:left ;
+    padding:10px ;
+    margin-right:20px; 
+    color:white
+}
+.tel{margin-left: 10px;}
+.topper{
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.describe{
+    position: absolute;
+    left:50px;
+    bottom: 10%;
+    max-width: 80%;
+    background-color: rgb(24, 23, 23,0.1);
+    color:white
+    
+}
+.describe:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    color: white
+}
+.image{
+    width:100%;
+    height:700px;
+    object-fit: cover;
+    object-position:center;
+    margin-left: 0px;
+    
+}
+
+.text{
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+.contact{
+    border:none;
+    background-color: red;
+    width:35%;
+    text-align: center;
+    padding:5px;
+    font-size: 1.4rem;
+    margin-right: 20%; 
+}
+.contact:hover{
+    animation: change 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes change {
+    from{background-color: red;}
+    to{background-color: greenyellow;}
+}
+.chat{
+    display:block;
+    animation-name: kofi 4s ;
+    padding:10px;
+    background-color: black;
+    color:white;
+    position: absolute;
+}
+
+@keyframes kofi {
+    0%{left: 0px ;left:70px }
+    100%{left: 70px ; top: 50px;}
+    
+}
+.move{
+    margin-left : 18%
+}
+
+.carcount{
+    position: relative;
+    margin-top: -5px;
+}
+.centre{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    top:20px;
+    left:30%;
+    text-transform: capitalize;
+    color : white
+}
+.button{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width:100%
+}
+.one{
+    padding:5px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    text-shadow: 1.2px 1.2px 1.2px black;
+    box-shadow:  1.2px 1.2px 1.2px black;
+}
+.middle{text-align: center;
+    color:white;
+}
+.image2{
+    object-fit: fill;
+    object-position: center;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:wrap
+}
+.contain{
+    flex:20%;
+}
+.cap{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+.bat{
+    margin-left: 4%;
+}
+.but{
+    width:100%;
+    padding:5px;
+    color:black;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+}
+.but:hover{
+    background-color: red;
+}
+.content{
+    display: none;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: yellow;
+    z-index: -1;
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 0%;
+}
+.dropdown:hover .content{
+    display:block;
+}
+/* .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a,.dropbtn {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .dropbtn{
+    text-transform: capitalize;
+    border: none;
+    background-color: #333
+  }
+  .navbar a:hover,.dropbtn:hover{
+    background-color: green;
+    color:white
+  }
+  
+
+  .content {
+    padding: 16px;
+  }
+  
+ 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.row {
+    display: flex;
+  }
+  
+ 
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  .row{
+    width:100%;
+    background-color: red;
+    top:0px;
+    left:0
+  }
+
+input[type=text], input[type=password],input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.click{
+  border: none;
+  padding:5px;
+  background-color: red;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.click:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border: none;
+  font-size: 1.1rem;
+}
+.cancelbtn:hover{
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 60%; 
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  animation: animatezoom 0.6s
+}
+
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.centre:hover{
+  background-color: rgb(17, 233, 17,0.2);
+}
+button a{
+  text-decoration: none;
+  color:black;
+  display:block;
+}

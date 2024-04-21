@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="modelx.css">
+</head>
+<body>
+
+<!-- <h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="usa flag.webp" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="ghfalg.webp" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="usa flag.webp" style="width:100%">
+</div>
+
+</div> -->
+<div class="navbar" id="navbar">
+    <div>
+        <a href="#modelA">Home</a>
+        <a href="#modelA">Home</a>
+        <a href="#modelB">Contact</a>
+        <div style ="float:right">
+            <a href="#modelC">Search</a>
+        </div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'grey')">Model X</button>
+<button class="tablink" onclick="openPage('News', this, 'grey')" id="defaultOpen">Mode Y</button>
+<button class="tablink" onclick="openPage('Contact', this,'grey' )">Model Y</button>
+<button class="tablink" onclick="openPage('About', this,'grey' )">Accesories</button>
+<button class="tablink" onclick="openPage('Contact', this,'grey' )">Solar Panel</button>
+
+
+
+<div id="Home" class="tabcontent one">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="top image.webp" style="width:100%;height:70px;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="lname5.webp" style="width:100%;height:70px;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="lname4.webp" style="width:100%;height:70px;">
+        </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+       
+    </div>
+</div>
+
+<div id="News" class="tabcontent">
+    <div class="flex-container">
+        <div class="colum">
+            <div class="card">
+                <img src="lname.webp" alt="car" style="width: 100%; height:auto">
+                <div class="text">
+                    <p><b>$140.00/day</b></p>
+                    <button class="buy">BUY</button>
+                </div>  
+            </div>
+            <div class="card">
+                <img src="lname.webp" alt="car" style="width: 100%; height:auto">
+                <div class="text">
+                    <p><b>$140.00/day</b></p>
+                    <button class="buy">BUY</button>
+                </div>  
+            </div>
+        </div>
+        <div class="colum">
+            <div class="card">
+                <img src="lname.webp" alt="car" style="width: 100%; height:auto">
+                <div class="text">
+                    <p><b>$140.00/day</b></p>
+                    <button class="buy">BUY</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+
+    // var slideIndex = 0;
+    // showSlides();
+
+    // function showSlides() {
+    // var i;
+    // var slides = document.getElementsByClassName("mySlides");
+    // for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";  
+    // }
+    // slideIndex++;
+    // if (slideIndex > slides.length) {slideIndex = 1}    
+    // slides[slideIndex-1].style.display = "block";  
+    // setTimeout(showSlides, 4000);
+    // }
+    // window.onscroll = function() {myFunction()};
+            
+    // var navbar = document.getElementById("navbar");
+    // var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+    var showme = 1;
+    moveslide(showme);
+
+    function plusSlides(n) {
+    moveslide(showme += n);
+    }
+
+    function currentSlide(n) {
+    moveslide(showme = n);
+    }
+
+    function moveslide(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {showme = 1}    
+    if (n < 1) {showme = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[showme-1].style.display = "block";  
+    dots[showme-1].className += " active";
+    }
+</script>
+
+</body>
+</html> 

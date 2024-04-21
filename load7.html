@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="load.css">
+</head>
+<body>
+<div class="navbar" id="navbar">
+    <div>
+        <a href="telsa.html">Home</a>
+        <div style="float:left ; margin-left:10%" class="shop">
+            <a target="_blank" href="cars.html">Shop</a>
+        </div>
+        <div style ="float:right">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn">Login</button>
+            <a href="#modelC">Search</a>
+        </div>
+    </div>
+</div>
+<div class="pad"> 
+    <div class="inside">
+        <table id="customers" style="float: left;" >
+        <tr class="head">
+            <th colspan=2 style="text-align:centre">$13.00 / day </th> 
+        </tr>
+        <tr>
+            <td>MODEL </td>
+            <td>MODEL A</td>
+            
+        </tr>
+        <tr>
+            <td>TRANSFORM</td>
+            <td>Automatic</td>
+            
+        </tr>
+        <tr>
+            <td>AC</td>
+            <td>YES</td>
+            
+        </tr>
+        <tr>
+            <td>NEW/ USED</td>
+            <td>New</td>
+            
+        </tr>
+        <tr>
+            <td>FUEL </td>
+            <td>Diesel</td>
+        
+        </tr>
+        </table>
+        <div class="shift">
+            <button class="book" onclick="document.getElementById('id01').style.display='block'" >BOOK</button><br><br>
+        </div>
+    </div>
+   
+    
+    
+    
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <img src="istockphoto-1473771646-1024x1024.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+    <img src="istockphoto-531786318-1024x1024.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+    <img src="istockphoto-541575124-1024x1024.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+   
+    
+</div>
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="image header.avif" alt="Avatar" class="avatar" style="width:60%">
+      </div>
+  
+      <div class="container">
+        <h3><b>$300 per day </h3></p>
+        <label for="psw"><b>Message</b></label>
+        <input type="text" placeholder="What is your problem?" name="psw" required>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" id="book" class="cancelbtn" onclick="booky()">Book</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
+        
+      </div>
+    </form>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        function key(){
+            var fname=document.getElementById('sub')
+            fname.innerHTML="Subscribed + "
+            fname.style.backgroundColor="green"
+        }
+        function booky(){
+            var fname=document.getElementById('book')
+            fname.innerHTML="Saved + "
+            fname.style.backgroundColor="green"
+            fname.style.fontSize="2rem"
+            fname.style.fontWeight="500px"
+        }
+
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:32:21 GMT -->
+</html> 

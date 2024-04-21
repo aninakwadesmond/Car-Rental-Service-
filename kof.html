@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="kofi.css">
+</head>
+<body>
+<div class="row">
+  <div class="left" style="background-color:#bbb;" class="hold">
+    <h2>Book cars</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#last3">Model S</a></li>
+      <li><a href="#last3">Model Y</a></li>
+      <li><a href="#last2">Model A</a></li>
+      <li><a href="#last1">Accesories</a></li>
+      <li><a href="#last">Solar Panels</a></li>
+    </ul> 
+  </div>
+  <div class="container">
+  
+  <div class="right" style="background-color:#ddd;" id="last4">
+    <div class="man">
+        <img src="image header.avif" alt="image" style ="width:100%">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn force">Book Now</button> 
+    </div>
+  
+  </div>
+  <div class="right" style="background-color:#ddd;"id="last3">
+    <div class="man">
+        <img src="image header.avif" alt="image" style ="width:100%">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn force">Book Now</button> 
+    </div>
+  
+  </div>
+  <div class="right" style="background-color:#ddd;" id="last2">
+    <div class="man">
+        <img src="image header.avif" alt="image" style ="width:100%">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn force">Book Now</button> 
+    </div>
+  
+  </div>
+  <div class="right" style="background-color:#ddd;"id="last1">
+    <div class="man">
+        <img src="image header.avif" alt="image" style ="width:100%">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn force">Book Now</button> 
+    </div>
+  
+  </div>
+  <div class="right" style="background-color:#ddd;" id="last">
+    <div class="man">
+        <img src="image header.avif" alt="image" style ="width:100%">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn force">Book Now</button> 
+    </div>
+  
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_js_search_menu by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:38:46 GMT -->
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="image header.avif" alt="Avatar" class="avatar" style="width:60%">
+      </div>
+  
+      <div class="container">
+        <h3><b>$300 per day </h3></p>
+        <label for="psw"><b>Message</b></label>
+        <input type="text" placeholder="What is your problem?" name="psw" required>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Buy</button>
+        
+      </div>
+    </form>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</html>

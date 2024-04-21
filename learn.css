@@ -1,0 +1,754 @@
+*{box-sizing: border-box;}
+body{
+    padding: 0px;
+    margin: 0%; 
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: silver;
+    max-width: 100%;
+    padding:0px;
+    margin: 0px;
+    
+
+
+}
+li{
+    float: left
+}
+li a{
+    display: block;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+li a:hover{
+    background-color: black;
+    color:white
+}
+.name{
+    margin-left: 30%;
+}
+.right{
+    margin-left: 20%;
+}
+button{margin-right:0px;
+     background-color: brown;
+     margin-top: 4px;
+     margin-left: 4px;
+     padding:0px;
+     border:none;
+     font-size: 1.4rem;
+     display:inline-block;
+     border-radius: 5%;
+    }
+button:hover{
+    background-color: green;
+    color:white
+}
+.flex-container, .flex-contend{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content{
+    flex:40%;
+    max-width: 40%;
+}
+.one{float:left}
+.two{float:right}
+main{
+    margin:10% ;
+}
+.mycar{
+    flex:50%;
+    max-width: 50%;
+    position:relative;
+    margin-left: 20px;
+}
+.contact-us{
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:10px;
+    font-size: 1.5rem;
+    background-color: yellow;
+    color: black;
+    
+
+}
+.contact-us:hover{
+    animation:kofi 2s ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+
+.drive{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    padding:10px;
+    font-size: 1.5rem;
+    background-color: yellow;
+    color: black;
+    
+}
+.drive:hover{
+    animation:kofi 2s ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes kofi {
+    
+
+    from{background-color:silver}
+    to{background-color:pink}
+}
+.fname{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 20px;
+
+    
+}
+.topper{
+    position: relative;
+}
+.carry{
+    position:absolute ;
+    bottom:2%;
+    left: 5%;
+    max-width: 80%;
+}
+.carry:hover{
+    background-color: rgb(22, 22, 22,0.4);
+    color:white
+
+}
+span{
+    display:inline-block
+}
+.describe{
+  font-size: 3rem;  
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  background-color: rgb(32, 31, 31,0.1);
+  color: white;
+  text-indent: 20px;
+}
+.contact{
+    padding:10px ;
+    border-radius: 10px;
+    border:none;
+    width:100%;
+    background-color: rgb(223, 15, 15, 0.5);
+    margin-left: 0px;
+    
+}
+.contact:hover{
+    background-color: red;
+    color:black;
+    font-size:bold
+    
+}
+
+.lef{
+    flex: 33.33%;
+    margin-left: 20px;
+    padding:10px;
+    
+}
+.contain1{
+    flex: 30%;
+    max-width: 30%;
+}
+.small{float: left;}
+.pre{
+    margin-left: -50px;
+}
+.inside{
+    margin-bottom: 20px;
+}
+h1,h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+h1{text-transform: uppercase;
+    font-size: 2rem;
+}
+.shade{
+    font-weight: 800px;
+    font-size: 1.6rem;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+.pad{
+    padding: 2px 20px 5px 10px;
+}
+.centre{
+    text-align: center;
+    font-style: bold;
+}
+.load{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color:black;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background-color: grey;
+    border: none;
+    box-shadow: 5px 5px 5px grey;
+}
+.load:hover{
+    background-color: red;
+}
+.content2{
+    flex: 40%;
+    max-width: 40%;
+    margin: 10px 20px 0px 90px;
+}
+tr,td,table{
+    border: 1px solid black;
+}
+tr,td{
+    border-right: none;
+    border-bottom: none;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+table{
+    width:100%
+}
+tr{
+    margin-bottom: 10px;
+}
+.man{
+    background-color: red;
+    color: white;
+    font-weight: 1.6rem;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+.official{
+    background-color: red;
+    color:black;
+    font-size:1.4rem;
+    padding:10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+.header {
+    background-color: red ;
+    color:black;
+    width:100%;
+    overflow: hidden;
+    height:200px;
+    
+}
+.header h2, .header p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.header h2,.contant h2{
+    font-size: 3rem;
+    text-shadow: 3px 3px 2px grey;
+}
+.contant{
+    flex:50%;
+    max-width: 50%;
+}
+.contant1{
+    flex:30%;
+    max-width: 30%;
+    margin-left: 10%;
+}
+.move{
+    margin-right:70px;
+}
+.but{
+    float:right;
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+}
+.tick{
+    font-size: 1.4rem;
+    font-weight: 600px;
+    font-style: italic;
+    color: black;
+}
+.tick1{
+    font-size: 1.4rem;
+    font-weight: 300px;
+    font-style: italic;
+    color: black;
+}
+.shift{
+    margin-left: 15px;
+}
+.topic{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+.topic h3{
+    font-size: 1.2rem;
+}
+.topic h1{
+    font-size: 2rem;
+    font-weight: 800px;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.content2{
+    flex: 30%;
+    max-width: 30%;
+    margin-right: 10px;
+}
+.content3{
+    flex:50%;
+    max-width: 50%;
+    margin-right: 20px;
+}
+.content3a{
+    flex:30%;
+    max-width: 30%;
+    margin-left: 50px;
+}
+.space{
+    margin-bottom: 70px;
+    font-size: 1.3rem;
+    font-size: bold;
+    padding: 20px;
+    overflow: hidden;
+    background-color: silver;
+}
+.space:hover{
+    background-color: red;
+    font-weight: 250px;
+    font-style: italic;
+}
+.event{
+    flex:55%;
+    max-width: 55%;
+    margin-right: 20px;
+}
+.contain{
+    flex:20%;
+    max-width: 20%;
+    margin-right: 20px;
+}
+.eventb{
+    flex: 35%;
+    max-width: 35%;
+}
+.imag{
+    border-radius: 10px;
+    border:none;
+    padding: 0px;
+    width:10%;
+}
+.texting{
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 3px 3px solid grey;
+}
+.cap{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1,3rem;
+    text-shadow: 3px 3px 3px grey;
+}
+.naf{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.bat{
+    margin-left: 20px;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  .accordion:hover{
+    background-color:green
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  
+  header{
+    background: black;
+    /* background-image:url(old\ man.webp); */
+    height:200px;
+    background-size: 100%;
+    
+   
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: silver; */
+    max-width: 100%;
+    padding:0px;
+    margin: 0px;
+    top:0;
+
+    /* height: 60px; */
+}
+li{
+    float: left;
+  
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black
+
+}
+li a:hover{
+    background-color: rgb(12, 11, 11,0.6);
+    color:white
+}
+.tel>a{color:white;
+    font-size: 2rem
+}
+nav a{
+    float: left;
+}
+.home{
+    display:inline-block;
+    width:200px; 
+    text-indent: -9999999999px;
+    position:relative;
+    height:40px;
+    background-image: url(car\ e.webp);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    margin-top: 5px 
+    
+}
+li.klist{
+    margin-left: 30%;
+    color:black;
+    display: block;
+}
+li.llist{
+    margin-left:18%;
+    padding:10px;
+    margin-top: auto;
+    display:block
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 9999999999;
+    top: 0;
+  }
+  
+  /* Navbar links */
+  .navbar a:hover{
+    background-color: green;
+    color:white
+  }
+  .go>a,.go>span,.dropdown>a{
+    float:left ;
+    padding:10px ;
+    margin-right:20px; 
+    color:white
+}
+.tel{margin-left: 10px;}
+*{
+box-sizing: border-box;
+}
+body{
+padding: 0px;
+margin: 0%; 
+padding-top: 60px;
+}
+header{
+background: black;
+background-image:url(car\ e.webp);
+height:200px;
+background-size: 100%;
+
+
+}
+ul {
+list-style-type: none;
+overflow: hidden;
+background-color: silver; 
+max-width: 100%;
+padding:0px;
+margin: 0px;
+top:0;
+
+/* height: 60px; */
+}
+li{
+float: left;
+
+
+}
+li a{
+display: block;
+padding: 10px;
+font-size: 1.4rem;
+text-decoration: none;
+text-transform: capitalize;
+color:black
+
+}
+li a:hover{
+background-color: rgb(12, 11, 11,0.6);
+color:white
+}
+.tel>a{color:white;
+font-size: 2rem
+}
+nav a{
+float: left;
+}
+.home{
+display:inline-block;
+width:200px; 
+text-indent: -9999999999px;
+position:relative;
+height:40px;
+background-image: url(car\ e.webp);
+background-repeat: no-repeat;
+border-radius: 50%;
+width: 40px;
+margin-top: 5px 
+
+}
+li.klist{
+margin-left: 30%;
+color:black;
+display: block;
+}
+li.llist{
+margin-left:18%;
+padding:10px;
+margin-top: auto;
+display:block
+}
+#navbar {
+overflow: hidden;
+background-color: #333;
+z-index: 9999999999;
+top: 0;
+}
+
+/* Navbar links */
+#navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
+.navbar a:hover{
+background-color: green;
+color:white
+}
+
+/* Page content */
+.content {
+padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 60px;
+}
+#navbar a,.dropbtn {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 16px;
+}
+.dropbtn{
+text-transform: capitalize;
+border: none;
+background-color: #333
+}
+.navbar a:hover,.dropbtn:hover{
+background-color: green;
+color:white
+}
+button a{
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+.contain1>a{
+    text-decoration: none;
+    color:black
+}
+.inside:hover{
+    background-color: grey;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  input[type=text], input[type=password],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .click{
+    border: none;
+    padding:5px;
+    background-color: red;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .click:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .cancelbtn:hover{
+    background-color: red;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%; 
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  
+  .animate {
+    animation: animatezoom 0.6s
+  }
+  
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  .centre:hover{
+    background-color: rgb(17, 233, 17,0.2);
+  }
