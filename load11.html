@@ -4,7 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="load.css">
 </head>
+<style>
+  #customers th {
+    background-color:red
+  }
+</style>
 <body>
+  
 <div class="navbar" id="navbar">
     <div>
         <a href="telsa.html">Home</a>
@@ -13,7 +19,6 @@
         </div>
         <div style ="float:right">
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn">Login</button>
-            <a href="#modelC">Search</a>
         </div>
     </div>
 </div>
@@ -21,7 +26,7 @@
     <div class="inside">
         <table id="customers" style="float: left;" >
         <tr class="head">
-            <th colspan=2 style="text-align:centre">$13.00 / day </th> 
+            <th colspan=2 style="text-align:centre">$43.00 / day </th> 
         </tr>
         <tr>
             <td>MODEL </td>
@@ -60,16 +65,15 @@
     <div class="slideshow-container">
 
     <div class="mySlides fade">
-    <img src="istockphoto-1473771646-1024x1024.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <img src="./cars/istockphoto-1210037240-1024x1024.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-    <img src="istockphoto-531786318-1024x1024.jpg" style="width:100%">
+    <img src="./car inside/istockphoto-1932519784-1024x1024.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-    <img src="istockphoto-541575124-1024x1024.jpg" style="width:100%">
+    <img src="./cars/istockphoto-516426312-1024x1024.jpg" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -86,11 +90,11 @@
     <form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="image header.avif" alt="Avatar" class="avatar" style="width:60%">
+        <img src="./cars/istockphoto-1210037240-1024x1024.jpg"  alt="Avatar"  style="width:100%">
       </div>
   
       <div class="container">
-        <h3><b>$300 per day </h3></p>
+        <h3><b>$305 per day </h3></p>
         <label for="psw"><b>Message</b></label>
         <input type="text" placeholder="What is your problem?" name="psw" required>
       </div>

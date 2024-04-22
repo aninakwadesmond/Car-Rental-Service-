@@ -3,6 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="load.css">
+<style>
+  #customers th {
+    background-color:rgb(7, 150, 7,0.8)
+  }
+</style>
 </head>
 <body>
 <div class="navbar" id="navbar">
@@ -13,29 +18,25 @@
         </div>
         <div style ="float:right">
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbtn">Login</button>
-            <a href="#modelC">Search</a>
         </div>
     </div>
 </div>
 <div class="pad"> 
     <div class="inside">
         <table id="customers" style="float: left;" >
+        
         <tr class="head">
-            <th colspan=2 style="text-align:centre">$13.00 / day </th> 
+          <th colspan=2 style="text-align:centre">$35.00 </th> 
+        </tr>
+        </tr>
+         
+          <td>Type</td>
+          <td>Hills</td>
+          
         </tr>
         <tr>
-            <td>MODEL </td>
-            <td>MODEL A</td>
-            
-        </tr>
-        <tr>
-            <td>TRANSFORM</td>
-            <td>Automatic</td>
-            
-        </tr>
-        <tr>
-            <td>AC</td>
-            <td>YES</td>
+            <td>From</td>
+            <td>UK</td>
             
         </tr>
         <tr>
@@ -44,10 +45,16 @@
             
         </tr>
         <tr>
-            <td>FUEL </td>
-            <td>Diesel</td>
+            <td>Fashion</td>
+            <td>Lion Queen/td>
         
         </tr>
+          <tr>
+              <td>NEW/ USED</td>
+              <td>New</td>
+              
+          </tr>
+          
         </table>
         <div class="shift">
             <button class="book" onclick="document.getElementById('id01').style.display='block'" >BOOK</button><br><br>
@@ -60,16 +67,16 @@
     <div class="slideshow-container">
 
     <div class="mySlides fade">
-    <img src="istockphoto-1473771646-1024x1024.jpg" style="width:100%">
+    <img src="./accessories/istockphoto-1335540992-1024x1024.jpg" style="width:100%">
     <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
-    <img src="istockphoto-531786318-1024x1024.jpg" style="width:100%">
+    <img src="./accessories/istockphoto-1352509076-1024x1024.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-    <img src="istockphoto-541575124-1024x1024.jpg" style="width:100%">
+    <img src="./accessories/istockphoto-1219945879-1024x1024.jpg" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -86,11 +93,11 @@
     <form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="image header.avif" alt="Avatar" class="avatar" style="width:60%">
+        <img src="./accessories/istockphoto-1335540992-1024x1024.jpg" style="width:100%" alt="Avatar"  style="width:100%">
       </div>
   
       <div class="container">
-        <h3><b>$300 per day </h3></p>
+        <h3><b>$35 </h3></p>
         <label for="psw"><b>Message</b></label>
         <input type="text" placeholder="What is your problem?" name="psw" required>
       </div>
